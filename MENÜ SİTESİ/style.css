@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0c0c0b;
+    color: #f5f5dc;
+}
+
+
+header {
+    background-color: #0c0c0b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+.pizza-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.pizza-card:hover {
+    transform: scale(1.05);
+}
+
+.pizza-card p {
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.price {
+    display: block;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+    font-weight: bold;
+}
+
+.pizza-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.pizza-card ul {
+    list-style-type: square;
+    padding-left: 1.2rem;
+    text-align: left;
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pizza-card {
+        width: 90%;
+    }
+
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .pizza-card {
+        width: 45%;
+    }
+}
